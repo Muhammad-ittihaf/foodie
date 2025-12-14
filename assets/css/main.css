@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ColorPrimary: maroon;
+  --SecondaryColor: #313131;
+  --ThirdColor: white;
+  --ffPrimary: sans-serif;
+}
+
+.btn {
+  background-color: var(--SecondaryColor);
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid transparent;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--ThirdColor);
+}
+
+.container {
+  max-width: 1200px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+.verified_badge {
+  background-color: var(--ColorPrimary);
+  color: var(--ThirdColor);
+  border-radius: 50%;
+  border: 0.2rem solid var(--ColorPrimary);
+  margin-inline: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: var(--ffPrimary);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header_wrap {
+  background-color: var(--ColorPrimary);
+  padding-block: 0.5rem;
+}
+.header_wrap .header_inner-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_wrap .header_inner-wrap img {
+  width: auto;
+  height: 4rem;
+}
+.header_wrap .header_inner-wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+.header_wrap .header_inner-wrap ul a {
+  color: var(--ThirdColor);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.header_wrap .header_inner-wrap ul a:hover {
+  color: color-mix(in srgb, var(--ThirdColor), black 30%);
+  transition: all 0.3s ease-in-out;
+}
+.header_wrap .header_inner-wrap ul .header_btn-primary {
+  background-color: var(--SecondaryColor);
+  margin: 0.5rem;
+  display: inline-block;
+}
+.header_wrap .header_inner-wrap ul .header_btn-primary:hover {
+  background-color: color-mix(in srgb, var(--SecondaryColor), black 20%);
+}
+
+/* Header Wrap */
+.home_banner_inner {
+  position: relative;
+}
+.home_banner_inner .top_banner img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 25%;
+     object-position: 25%;
+}
+.home_banner_inner .banner_text {
+  text-align: center;
+  padding-block: 10rem;
+  color: var(--ThirdColor);
+}
+.home_banner_inner .banner_text a {
+  background-color: var(--ColorPrimary);
+  display: inline-block;
+  margin: 0.25rem;
+}
+.home_banner_inner .banner_text a:hover {
+  background-color: color-mix(in srgb, var(--ColorPrimary), black 20%);
+  color: color-mix(in srgb, var(--ThirdColor), black 20%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Banner Inner */
+.main_text-sec {
+  padding-block: 1rem;
+  background-color: var(--SecondaryColor);
+}
+.main_text-sec .main_inner-text {
+  text-align: center;
+}
+.main_text-sec .main_inner-text h2 {
+  color: var(--ColorPrimary);
+}
+.main_text-sec .main_inner-text p {
+  color: var(--ThirdColor);
+}
+
+/*Main Text Section */
+.reverse_section-outer {
+  padding-block: 1rem;
+  background-color: #f3f3f3;
+}
+.reverse_section-outer .reverse_inner-section figure {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding-block: 2rem;
+  align-items: center;
+}
+.reverse_section-outer .reverse_inner-section figure img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+.reverse_section-outer .reverse_inner-section figure figcaption {
+  flex: 60%;
+  max-width: 70%;
+  padding: 0.5rem;
+}
+.reverse_section-outer .reverse_inner-section figure figcaption .verified_badge-txt {
+  padding-inline: 3rem;
+}
+.reverse_section-outer .reverse_inner-section figure figcaption h2 {
+  color: var(--ColorPrimary);
+}
+.reverse_section-outer .reverse_inner-section figure figcaption a {
+  display: inline-block;
+  margin-block: 0.25rem;
+}
+.reverse_section-outer .reverse_inner-section figure figcaption .banner_btn-contact:hover {
+  background-color: color-mix(in srgb, var(--SecondaryColor), black 30%);
+  color: color-mix(in srgb, var(--ThirdColor), black 10%);
+  transition: all 0.3s ease-in-out;
+}
+.reverse_section-outer .reverse_inner-section figure figcaption .banner_btn-about {
+  background-color: var(--ColorPrimary);
+}
+.reverse_section-outer .reverse_inner-section figure figcaption .banner_btn-about:hover {
+  background-color: color-mix(in srgb, var(--ColorPrimary), black 30%);
+  color: color-mix(in srgb, var(--ThirdColor), black 10%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Reverse Section Outer */
+.white_bg-section {
+  padding-block: 1rem;
+}
+.white_bg-section .white_inner-section figure {
+  display: flex;
+  padding-block: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.white_bg-section .white_inner-section figure img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+.white_bg-section .white_inner-section figure figcaption {
+  flex: 60%;
+  max-width: 70%;
+  padding: 1rem;
+}
+.white_bg-section .white_inner-section figure figcaption h2 {
+  color: var(--ColorPrimary);
+}
+.white_bg-section .white_inner-section figure figcaption .verified_badge-txt {
+  padding-inline: 3rem;
+}
+
+/* White Background Section */
+.footer_wrap {
+  background-color: var(--SecondaryColor);
+  padding: 0.5rem;
+}
+.footer_wrap .footer_inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ThirdColor);
+  font-size: smaller;
+}
+.footer_wrap .footer_inner-wrap ul {
+  display: flex;
+  list-style: none;
+}
+.footer_wrap .footer_inner-wrap ul a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--ThirdColor);
+}
+
+/* Footer Wrap */
+@media (max-width: 1031.98px) {
+  .reverse_inner-section figure picture {
+    max-width: 100%;
+    margin: auto;
+  }
+  .reverse_inner-section figure figcaption {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .reverse_inner-section figure figcaption .verified_badge-txt {
+    margin-block: 1rem;
+  }
+  .white_inner-section figure picture {
+    max-width: 100%;
+    margin: auto;
+  }
+  .white_inner-section figure figcaption {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .white_inner-section figure figcaption .verified_badge-txt {
+    margin-block: 1rem;
+  }
+} /*Media Query 1031px*/
+@media (max-width: 736.98px) {
+  figcaption .verified_badge-txt {
+    white-space: nowrap;
+  }
+  .footer_inner-wrap {
+    white-space: nowrap;
+    flex-direction: column;
+  }
+} /*Media Query 736px*/
+@media (max-width: 752.98px) {
+  figcaption .verified_badge-txt {
+    white-space: wrap;
+  }
+  .footer_inner-wrap span {
+    padding: 1rem;
+  }
+} /*Media Query 752px*//*# sourceMappingURL=main.css.map */
